@@ -1,0 +1,694 @@
+/*
+REFERENCES
+Accent Colour: #D2691E (chocolate brown)
+Background: #f5f5f5 (Whitesmoke grey)
+Background 2: #C0C0C0 (Silver)
+Text: #808080 (gray grey)
+*/
+
+*{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	line-height: normal;
+	color:#808080;
+	/* border: 0.5px solid red; */
+}
+
+.portfolio_image, .portfolio_information, .grid_segments, .featured, .more_projects, .about, .intro, .about_image{
+	visibility: hidden;
+}
+
+.test{
+	width: 50%;
+	height: 500px;
+	background-color: blue;
+}
+
+img{
+	display:block;
+	max-width:100%;
+}
+
+/* WEBHOST BRANDING */
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+ 	display:none;
+ }
+
+/* GLOBAL */
+	.container{
+		overflow:hidden;
+		max-width:60em;
+		margin:0 auto;
+		padding:0 1em;
+		min-height: 70%;
+	}
+
+	h2{
+		font-size: 1.5em;
+		text-align:center;
+		margin-top:1em;
+		margin-bottom:0.2em;
+	}
+
+	body{
+		background: #f5f5f5;
+		font-family: 'Comfortaa', sans-serif;
+		font-size: 16px;
+	}
+
+	a{
+    	color: #D2691E;
+    	transition: 0.3s ease-in-out;
+    }
+
+	a:hover{
+    	color: #D2691E;
+    	transition: 0.3s ease-in-out;
+    }
+
+	a:active{
+    	color: black;
+    }
+
+/* HEADER */
+	#navbar{
+		/* overflow: hidden; */
+		position: fixed;
+		top: 0;
+		width: 100%;
+		transition: 0.4s;
+		z-index: 99;
+		padding: 5em 0em 2em 0em;
+	}
+
+	header{
+		background: #ffffff;
+		color:#000000;
+
+	}
+
+	#logo{
+		float: left;
+	}
+
+	#logo a{
+		text-decoration:none;
+		font-weight:900;
+		text-transform: lowercase;
+		font-size: 2.2em;
+		color:black;
+	}
+	#logo a:hover{
+		color: #D2691E;
+	}
+
+	#logo p{
+		letter-spacing: 0.1em;
+		font-size: 0.87em;
+		padding-left: 0.1em;
+	}
+
+/*	header .container{
+		padding-top:5em;
+		padding-bottom: 2em;
+	}	*/
+	nav{
+		float:right;
+		margin-top: 1em;
+	}
+	nav a{
+		color: #808080;
+		text-transform: lowercase;
+	}
+
+	nav ul{
+		margin:0;
+		padding:0;
+	}
+
+	nav li{
+		float:left;
+		display: inline;
+		padding: 0 1em 0 1em;
+	}
+
+	label{
+		font-size: 1.5em;
+		line-height: 2em;
+		display:none;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 1em;
+		height: 0.1em;
+		background-color: black;
+		margin: 0.2em 0;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-0.21em, 0.21em) ;
+		transform: rotate(-45deg) translate(-0.21em, 0.21em) ;
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-0.21em, -0.21em) ;
+		transform: rotate(45deg) translate(-0.21em, -0.21em) ;
+	}
+
+	.closebtn{
+		font-size: 2em;
+	}
+
+	#toggle, .closebtn {
+		display: none;
+	}
+
+/* HOME */
+
+/* INTRO */
+	section h1{
+		margin-top:1em;
+		text-align: center;
+		clear: both;
+		font-size: 1.3em;
+		margin-bottom: 1em;
+		font-weight:300;
+	}
+
+	.intro h2{
+		margin-top:1em;
+		text-align: center;
+		color:#D2691E;
+		clear: both;
+		font-size: 1em;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		font-weight:300;
+	}
+
+/* PORTFOLIO GRID */
+	.grid{
+	  width: 100%;
+	  margin: 2em auto 0 auto;
+	  display: grid;
+	  grid-gap: 2em;
+	  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+	  margin-bottom: 1em;
+	}
+
+	.grid_segments{
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+		position: relative;
+	}
+
+	.grid_image {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  border-radius: 0.5em;
+	}
+
+	.grid_overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #f5f5f5;
+	  border-radius: 0.5em;
+	}
+
+	.grid_segments:hover .grid_overlay {
+	  opacity: 0.95;
+	}
+
+	.grid_text {
+	  color: #808080;
+	  position: relative;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	  padding:1em;
+	}
+
+/* PRESS */
+	.press-grid{
+	  width: 100%;
+	  margin: 2em auto 0 auto;
+	  display: grid;
+	  grid-gap: 2em;
+	  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+	}
+
+	.press-grid .grid_overlay {
+		opacity:0.95;
+	}
+
+	.press-grid .grid_segments:hover .grid_overlay {
+	  opacity: 0;
+	}
+
+/* ABOUT */
+	.about_image{
+		  display: block;
+		  width: 14em;
+		  height: auto;
+		  margin-right: auto;
+		  margin-left: auto;
+		  margin-top: 1em;
+		  border-radius: 50%;
+	}
+
+	.logos_grid{
+		text-align:center;
+		margin: 1em 0;
+	}
+
+	.skills_icon{
+		display: inline-block;
+	    margin: 2em;
+	    height: 5em;
+	}
+
+	.about, .about_logos{
+		padding: 4em 0 6em 0;
+		border-bottom: 1px solid #808080;
+	}
+
+	.about h2{
+		padding: 0em 0 2em 0;
+	}
+
+	.timeline{
+		text-align: center;
+	}
+
+	.timeline h2{
+		padding: 0 0 1em 0;
+	}
+
+	.timeline h3{
+		padding: 3em 0 1em 0;
+	}
+
+	.timeline p{
+		padding: 0 0 1em 0;
+	}
+
+/* PROJECTS */
+.project_name h1{
+	margin:0;
+	margin-top: 1em;
+	color: black;
+	font-weight: bold;
+}
+
+.portfolio_image{
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  margin: 4em 0 2em 0;
+	}
+
+.portfolio_image h2{
+	  font-size: 1.5em;
+	}
+
+.project_recognition{
+	padding-top: 3em;
+}
+
+.project_recognition li{
+	text-decoration: none;
+	text-align: center;
+	margin-left: 1em;
+	list-style: none;
+	padding-bottom: 0.5em;
+	}
+
+.caption{
+	margin-top: 1em;
+	text-align: center;
+}
+
+.preregister{
+		text-align: center;
+		font-size: 0.7em;
+	}
+
+.purchase{
+	text-align: center;
+}
+
+.portfolio_information{
+	margin-top: 2em;
+	}
+
+.portfolio_information p{
+	margin-top: 2em;
+	}
+
+.portfolio_information li{
+	text-decoration: none;
+	margin-left: 1em;
+	list-style: upper-roman;
+	padding-bottom: 1em;
+	}
+
+.contact p{
+	text-align: center;
+
+	}
+
+.project_grid{
+	  width: 100%;
+	  margin-top:2em;
+	  display: grid;
+	  grid-gap: 2em;
+	  grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+	}
+
+.project_image{
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+		position: relative;
+	}
+
+.featured{
+	margin-top: 2em;
+	text-align:center;
+	}
+
+.featured h3{
+	margin: 1em 0;
+	text-align:center;
+	}
+
+.featured-images{
+	text-align:center;
+	margin: 1em 0;
+	}
+
+.featured-segments{
+	display: inline-block;
+    margin: 1em;
+    height: 7em;
+    border-radius: 0.5em;
+	}
+
+.more_projects{
+	padding-top: 2em;
+	margin-top: 4em;
+	border-top: 1px solid #808080;
+	}
+
+.more_projects h3{
+	text-align: center;
+	width: 100%;
+	padding-top: 3em;
+	font-size: 1em;
+	}
+
+.previous_project, .next_project{
+	float: left;
+	width: 7em;
+	text-align: left;
+	filter: grayscale(100%);
+	transition: 0.3s ease-in-out;
+	}
+
+.previous_project:hover, .next_project:hover{
+	filter: grayscale(0);
+	transition: 0.3s ease-in-out;
+	}
+
+.next_project{
+	float: right;
+	text-align: right;
+	}
+
+.more_projects-image{
+	width: 100%;
+	border-radius: 0.5em;
+	}
+
+.more_projects-caption{
+	font-size: 0.9em;
+	margin-top: 1em;
+	color: #D2691E;
+	}
+
+/* SKILLS PAGES */
+/* http://sachinchoolur.github.io/lightslider/ */
+
+/* FOOTER */
+	footer{
+		color:#000000;
+		margin-top:3em;	
+		padding:1em;
+		font-size: 0.5em;
+		text-align: center;
+		padding-left: 0em;
+		border-top: 2px white solid
+	}
+
+	.subscribe{
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	.subscribe h3{
+		font-size: 1.5em;
+		font-weight: normal;
+		padding-bottom: 0.5em;
+		color: #D2691E;
+	}
+
+	input[type=button], input[type=submit], input[type=reset] {
+		background-color: #D2691E;
+		border: none;
+		border-radius: 0.5em;
+		color: white;
+		text-decoration: none;
+		margin: 0em 1em;
+		cursor: pointer;
+		height: 2.5em;
+		padding: 0em 1em;
+		font-size: 1.2em;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+	input[type=email], select{
+		font-size: 1.2em;
+		height: 2.5em;
+		padding: 0em 1em;
+		border-radius: 0.5em;
+		border: none;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+/* 404 PAGE */
+	.error_page{
+	padding: 5em 0em;
+	text-align: center;
+	height: 60%;
+	}
+
+/* jQuery */
+/*	.container{
+		opacity: 0;
+	}
+
+	.portfolio_image{
+		opacity: 0;
+	}
+
+	.hero{
+		opacity: 1;
+	}
+
+	/*#navbar{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		transition: top 0.3s;
+		z-index: 1; 
+	} */
+
+	.headerspacer{
+		margin-top: 12em;
+		display: block;
+	}
+
+/* MEDIA QUERIES */
+@media(max-width: 700px){
+	html, body{
+		height: 90%;
+	}
+
+	.previous_project, .next_project{
+		filter: grayscale(0);
+	}
+
+	.more_projects-caption{
+	color: #808080;
+	}
+
+	header #logo,
+	header nav,
+	header nav li{
+		float:none;
+		text-align: center;
+		width: 100%;
+	}
+
+	.headerspacer{
+		margin-top: 14em;
+		display: block;
+	}
+
+	.grid{
+		grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+	}
+
+	.project_grid{
+		grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+	}
+
+	.grid_overlay {
+		position: relative;
+		height: 4em;
+		opacity: 1;
+		background-color: rgba(255, 255, 255, 0);
+		border-radius: 0;
+		top: 1%;
+	}
+
+	.grid_segments:hover .grid_overlay {
+		opacity: 1;
+	}
+
+	.press-grid .grid_segments:hover .grid_overlay {
+	  opacity: 1;
+	}
+
+	.grid_text {
+	  color: #808080;
+	  position: relative;
+	  top: 2.5em;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	  padding:1em;
+	  font-size: 0.9em;
+	}
+
+@media(max-width: 500px){
+	html, body{
+ 		height: 70%;
+ 	}
+
+	label{
+		float: right;
+		display:block;
+		cursor: pointer;
+		line-height: 0.7em;
+		z-index: 100;
+	}
+
+	.grid_text h3, .grid_text p{
+		font-size: 1.3em;
+	}
+
+	.portfolio_image, .portfolio_information, .about p, .contact p{
+		font-size: 1.1em;
+	}
+
+	.project_recognition li{
+		padding: 1em 0;
+	}
+
+	.headerspacer{
+		margin-top: 12em;
+		display: block;
+	}
+
+	header #logo{
+		float:left;
+		display: inline;
+		text-align: left;
+		width: auto;
+	}
+
+	header ul{
+		height: 0%;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #ffffff;
+		opacity: 1;
+		overflow-y: hidden;
+		transition: 0.5s;
+	}
+
+	#toggle:checked + ul {
+		float: left;
+		display: block;
+		height: 100%;
+	}
+
+	.closebtn{
+		display: block;
+		text-align: center;
+		width: 80%;
+	}
+
+	header nav li{
+		position: relative;
+		top: 5%;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		display: block;
+		margin-top: 1em;
+		padding-top:1em;
+		padding-bottom: 1em;
+		font-size: 1.2em;
+	}
+
+	a:hover, a:active{
+    	color: #D2691E;
+    	transition: 0s;
+    }
+
+	.grid, .press-grid{
+		grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+	}
+
+	.grid_text{
+		font-size: 0.7em;
+	}
+
+	.project_grid{
+		grid-template-columns: repeat(auto-fit, minmax(8.5em, 1fr));
+	}
+}
+}

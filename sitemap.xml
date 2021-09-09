@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>https://www.hansramzan.com/index.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/about.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/press.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/contact.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/five.php</loc>
+      <lastmod>2021-07-06</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/bone.php</loc>
+      <lastmod>2020-10-20</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/gloo.php</loc>
+      <lastmod>2020-10-20</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+	<url>
+      <loc>https://www.hansramzan.com/portfolio/clockvid-20.php</loc>
+      <lastmod>2020-03-24</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/drop.php</loc>
+      <lastmod>2019-11-22</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/catch.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/phone_cell.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/london_tube.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/blox.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/alienus.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <url>
+      <loc>https://www.hansramzan.com/portfolio/infinity.php</loc>
+      <lastmod>2018-08-01</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.7</priority>
+   </url>   
+
+</urlset>

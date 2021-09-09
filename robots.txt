@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /index.html
+Sitemap: http://hansramzan.com/sitemap.xml
